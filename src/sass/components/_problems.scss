@@ -1,0 +1,42 @@
+.problems {
+	padding: 25px 0 35px;
+	background-image: linear-gradient(#111518 75%, #ffffff 75%);
+
+	@media (min-width: 768px) {
+		padding: 55px 35px;
+	}
+
+	@media (min-width: 1366px) {
+		position: relative;
+		padding: 100px 65px;
+
+		&::after {
+			content: url('../images/problem/gray-fire.svg');
+			position: absolute;
+			right: 0;
+			top: 15%;
+		}
+	}
+
+	&__title {
+		font-weight: 800;
+		font-size: 24px;
+		line-height: calc(31 / 24);
+		letter-spacing: 0.03em;
+		color: var(--light-text-color);
+
+		@media (min-width: 768px) {
+			width: 450px;
+		}
+
+		@media (min-width: 1366px) {
+			font-size: 46px;
+			line-height: calc(60 / 46);
+			width: 805px;
+		}
+	}
+
+	&__help {
+		color: var(--accent);
+	}
+}
