@@ -1,11 +1,23 @@
 body {
-  font-family: "Roboto";
-  color: var(--main-color);
-  background-color: var(--color-white);
-  letter-spacing: 0.03em;
+  font-family: 'Poppins';
+  font-weight: 400;
+  color: var(--light-text-color);
+  background-color: var(--light-background-color);
 
   &.modal-open {
     overflow: hidden;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  &__text {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 0.93;
+
+    color: var(--logo-text-color);
   }
 }
 

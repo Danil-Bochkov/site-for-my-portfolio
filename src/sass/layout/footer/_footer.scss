@@ -1,0 +1,17 @@
+.logo__icon-footer {
+  width: 32px;
+  height: 29px;
+  margin-right: 16px;
+
+  @media screen and (min-width: 1400px) {
+    width: 40px;
+    height: 36px;
+  }
+}
+
+.footer-privacy {
+  font-size: 16px;
+  line-height: 1.88;
+
+  text-align: center;
+}

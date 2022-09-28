@@ -1,0 +1,8 @@
+.logo__icon-header {
+  width: 40px;
+  height: 36px;
+  margin-right: 8px;
+  @media screen and (min-width: 1400px) {
+    margin-right: 16px;
+  }
+}
