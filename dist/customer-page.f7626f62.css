@@ -1,3 +1,27 @@
+:root {
+  --light-background-color: #fff;
+  --light-text-color: #22343d;
+  --light-accordion-color: #e7e7e7;
+  --dark-background-color: #1f2e35;
+  --dark-text-color: #fff;
+  --dark-accordion-color: #474747;
+  --logo-text-color: #173a56;
+  --green-color: #02897a;
+  --blue-color: #4d8dff;
+  --purple-color: #740a76;
+  --red-color: #f03e3d;
+  --yellow-color: #f90;
+  --border-color: #dedede;
+  --border-color-for-mobile-form: #bcd0e5;
+  --form-color: #f5f5f5;
+  --form-border-color: #e8e8e8;
+  --background-color-for-sections: #f5f5f5;
+  --background-color-for-business: #ffefef;
+  --background-color-for-enterprise: #f2f6ff;
+  --background-color-for-socials: #edfffc;
+  --background-color-for-features: #f4f5f7;
+}
+
 h1, h2, h3, h4, h5, h6, ul, p {
   margin: 0;
   padding: 0;
@@ -11,7 +35,7 @@ textarea {
   resize: none;
 }
 
-.link {
+a {
   color: inherit;
   text-decoration: none;
 }
@@ -27,19 +51,30 @@ label {
 }
 
 .list {
-  color: inherit;
   list-style-type: none;
 }
 
 body {
-  color: var(--main-color);
-  background-color: var(--color-white);
-  letter-spacing: .03em;
-  font-family: Roboto;
+  color: var(--light-text-color);
+  background-color: var(--light-background-color);
+  font-family: Poppins;
+  font-weight: 400;
 }
 
 body.modal-open {
   overflow: hidden;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+}
+
+.logo__text {
+  color: var(--logo-text-color);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: .93;
 }
 
 .visually-hidden {
@@ -76,6 +111,37 @@ body.modal-open {
   .container {
     width: 1200px;
   }
+}
+
+.logo__icon-header {
+  width: 40px;
+  height: 36px;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 1400px) {
+  .logo__icon-header {
+    margin-right: 16px;
+  }
+}
+
+.logo__icon-footer {
+  width: 32px;
+  height: 29px;
+  margin-right: 16px;
+}
+
+@media screen and (min-width: 1400px) {
+  .logo__icon-footer {
+    width: 40px;
+    height: 36px;
+  }
+}
+
+.footer-privacy {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 /*# sourceMappingURL=customer-page.f7626f62.css.map */
