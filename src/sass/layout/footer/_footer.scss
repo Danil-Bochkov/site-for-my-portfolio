@@ -1,3 +1,48 @@
+.footer-field {
+  text-align: center;
+  &__label {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+
+    color: var(--light-text-color);
+  }
+}
+// -----------------------Socials--------------------------
+.footer-socials {
+}
+.footer-socials__item {
+}
+.footer-socials__link {
+}
+.footer-socials__icon {
+}
+// -----------------------Resource-------------------------
+.resource-field {
+}
+.resource-field__label {
+}
+.resource-list {
+}
+.resource-list__item {
+}
+.resource-list__link {
+}
+// -----------------------Legal Stuff----------------------
+.legal-field {
+}
+.legal-list__item {
+}
+.legal-list__link {
+}
+// -----------------------Form-----------------------------
+.footer-reg-field {
+}
+.footer-reg-field__text {
+}
+.footer-reg-field__btn {
+}
+// -----------------------Icon and etc---------------------
 .logo__icon-footer {
   width: 32px;
   height: 29px;
