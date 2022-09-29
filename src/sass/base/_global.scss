@@ -16,11 +16,14 @@ body {
     font-weight: 700;
     font-size: 30px;
     line-height: 0.93;
-
     color: var(--logo-text-color);
+
+    &-footer {
+      font-size: 28px;
+      line-height: 0.76;
+    }
   }
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -47,7 +50,7 @@ body {
     width: 768px;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: 1110px) {
+    width: 1110px;
   }
 }
