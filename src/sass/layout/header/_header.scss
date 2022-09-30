@@ -1,3 +1,4 @@
+
 .logo__icon-header {
   width: 40px;
   height: 36px;
@@ -8,26 +9,23 @@
   }
 }
 
-// теперь лого  слева
 .logo {
   margin-right: auto;
 }
 
 .wrapper {
-  text-align: center;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: center;
-  padding-top: 26px;
   color: var(--logo-text-color);
   position: relative;
+  height: 80px;
 }
 
 .header {
-  height: 80px;
   z-index: 3;
   position: fixed;
+  align-items: center;
   left: 0;
   top: 0;
   width: 100%;
@@ -39,43 +37,99 @@
   transform: translateY(-80px);
 }
 
-//  навигация
-.nav {
+
+.navbar {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 1109px) {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--light-background-color);
+    transition: all 0.2s;
+    overflow: hidden;
+
+    &.active-burger {
+      transform: translateY(100%);
+    }
+  }
+}
+
+.navbar {
+  @media screen and (max-width: 1109px) {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    overflow: auto;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.nav-list {
+  @media screen and (max-width: 1109px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .nav-list__item {
   list-style: none;
   display: inline-block;
 
+  &:last-child {
+    margin-right: 24px;
+
+    @media screen and (max-width: 1109px) {
+      margin-right: 0px;
+    }
+  }
+
+
+
   .nav-list__link {
     font-size: 16px;
     line-height: 1.75;
-    padding: 0 15px;
+    padding: 10px 15px;
+    transition-property: all;
+    transition-duration: 0.2s;
 
     &:hover {
       text-shadow: 0 0 0.65px var(--logo-text-color),
         0 0 0.65px var(--logo-text-color);
     }
+
+    @media screen and (max-width: 1109px) {
+      display: block;
+      font-size: 22px;
+      padding: 10px 24px;
+    }
   }
+
 }
 
-//  кнопки  логина и входа
 .login-btns {
   line-height: 1.5;
-  margin-right: 24px;
   border-radius: 5px;
   font-weight: 600;
   cursor: pointer;
+
+  @media screen and (max-width: 1109px) {}
 }
 
 .login-btn__log {
   border: 1px solid var(--border-color-for-mobile-form);
   background-color: var(--light-background-color);
   padding: 8px 24px;
+  border: 1px solid var(--color-for-mobile-form);
   transition-property: all;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
+  margin-right: 12px;
 
   &:hover,
   &:focus {
@@ -90,13 +144,17 @@
   border: none;
   padding: 9px 24px;
   transition-property: all;
-  transition-duration: 0.5s;
-
+  transition-duration: 0.2s;
+  margin-left: 12px;
+  margin-right: 23px;
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+  @media screen and (max-width: 1109px) {
+    margin-right: 0px;
+    }
 }
 
 .theme__switcher {
@@ -108,7 +166,7 @@
   cursor: pointer;
   align-items: center;
   transition-property: all;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
   vertical-align: middle;
 
   &:hover,
@@ -122,25 +180,28 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(180deg);
     width: 20px;
     height: 20px;
+    
   }
+  @media screen and (max-width: 1109px) {
+    margin-top: 15px;
+    }
 }
 
 //  бургер  меню
 .nav_menu-btn {
   display: none;
-}
 
-@media screen and (max-width: 1110px) {
-  .nav_menu-btn {
+  @media screen and (max-width: 1109px) {
     display: block;
     position: relative;
     width: 21px;
     height: 16px;
     cursor: pointer;
     z-index: 5;
+    top: 35%;
 
     span {
       position: absolute;
@@ -150,6 +211,7 @@
       height: 2px;
       background-color: var(--logo-text-color);
       transition: all 0.2s;
+      border-radius: 4px;
 
       &:first-child {
         top: 0;
@@ -176,43 +238,5 @@
         }
       }
     }
-  }
-
-  .login-btns {
-    margin-right: 0px;
-  }
-
-  .nav {
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: var(--light-background-color);
-    transition: all 0.2s;
-    overflow: hidden;
-
-    &.active-burger {
-      transform: translateY(100%);
-    }
-  }
-
-  .nav-list {
-    display: flex;
-    flex-direction: column;
-    // padding: 30px;
-    gap: 30px;
-    height: 100hv;
-    width: 100%;
-    background-color: #fff;
-    overflow: auto;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .nav-list__link {
-    display: block;
-    font-size: 30px;
-    line-height: 70px;
   }
 }
