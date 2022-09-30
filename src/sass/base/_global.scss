@@ -3,10 +3,14 @@ body {
   font-weight: 400;
   color: var(--light-text-color);
   background-color: var(--light-background-color);
-
+  padding-top: 80px;
   &.modal-open {
     overflow: hidden;
   }
+  &.lock {
+    overflow: hidden;
+  }
+
 }
 
 .logo {

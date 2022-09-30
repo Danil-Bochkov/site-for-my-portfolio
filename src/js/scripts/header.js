@@ -1,4 +1,4 @@
-// для пиздатого  хедера
+// для умного  хедера
 const header = document.querySelector('.header');
 let userScrollPosition = 0;
 let defaultOffset = 200; // чтоб хедер  прятался не сразу
@@ -25,7 +25,7 @@ document.addEventListener('scroll', () => {
 
 // для бургера
 
-const menu = document.querySelector('.nav');
+const menu = document.querySelector('.navbar');
 const menuBtn = document.querySelector('.nav_menu-btn');
 const body = document.body;
 
@@ -34,22 +34,25 @@ if (menu && menuBtn) {
 		menu.classList.toggle('active-burger')
 		menuBtn.classList.toggle('active-burger')
 		body.classList.toggle('lock')
-        // &.lock {
-        //     overflow: hidden;
-        // }   дописать это  к бади чтоб залочить  скролл
 	})
 
 	menu.addEventListener('click', (e) => {
-		if (e.target.classList.contains('nav')) {
+		if (e.target.classList.contains('navbar')) {
 			menu.classList.remove('active-burger')
 			menuBtn.classList.remove('active-burger')
 			body.classList.remove('lock')
 		}
 	})
+	menu.querySelectorAll('.nav-list__link').forEach(link => {
+		link.addEventListener('click', () => {
+		  menu.classList.remove('active-burger')
+		  menuBtn.classList.remove('active-burger')
+		  body.classList.remove('lock')
+		})
+	  })
 }
 
 
 // для переключателя темы сайта
 
-// для начала надо просто  сделать два класса,  вариаблы не нужно  подписывать  как под  разные темы,  и потом можно  ротейтом свг повернуть вместо  использования еще одной свг
 
