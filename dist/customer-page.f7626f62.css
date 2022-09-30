@@ -548,6 +548,7 @@ body.modal-open {
 }
 
 .footer__box {
+  border-radius: 8px;
   place-items: center;
   margin-left: 5px;
   position: relative;
