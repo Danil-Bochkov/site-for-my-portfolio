@@ -1,17 +1,257 @@
+.footer-field {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+  margin-bottom: 44px;
+  &__label {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  @media screen and (min-width: 1110px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 16px;
+    text-align: start;
+  }
+}
+
+// -----------------------Socials--------------------------
+
+.company-info-field {
+  @media screen and (min-width: 1110px) {
+    margin-right: 146px;
+  }
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+}
+
 .logo__icon-footer {
   width: 32px;
   height: 29px;
   margin-right: 16px;
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1110px) {
     width: 40px;
     height: 36px;
   }
 }
 
-.footer-privacy {
-  font-size: 16px;
-  line-height: 1.88;
+.footer-socials-list {
+  margin-top: 25px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 1110px) {
+    margin-top: 18px;
+  }
+}
 
+.footer-socials-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--background-color-for-socials);
+
+  transition: background-color var(--time-of-animation) var(--timing-function),
+    stroke var(--time-of-animation) var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--green-color);
+
+    & .footer-socials-list__icon {
+      stroke: var(--white-color);
+    }
+  }
+}
+
+.footer-socials-list__icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--green-color);
+}
+
+// ----------------Legal Stuff-&-Resource-----------------
+
+.resource-field {
+  @media screen and (min-width: 1110px) {
+    margin-right: 129px;
+  }
+}
+
+.legal-field {
+  @media screen and (min-width: 1110px) {
+    margin-right: 83px;
+  }
+}
+
+.footer-list__link {
+  font-size: 16px;
+  line-height: 2.19;
+
+  transition: color var(--time-of-animation) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--green-color);
+  }
+}
+
+// -----------------------Form-----------------------------
+
+.footer-reg-field__text {
+  margin: 0 auto 34px;
+  max-width: 280px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  @media screen and (min-width: 1110px) {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.footer-reg-form {
+  position: relative;
+}
+
+.footer-reg-form__input {
+  width: 325px;
+  border: 1px solid var(--color-for-mobile-form);
+  border-radius: 4px;
+  padding: 10px 15px;
+  outline: none;
+  transition: border-color var(--time-of-animation) var(--timing-function);
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--color-for-mobile-form);
+    @media screen and (min-width: 1110px) {
+      color: var(--green-color);
+    }
+  }
+  &:focus {
+    border-color: var(--green-color);
+  }
+  @media screen and (min-width: 1110px) {
+    padding: 10px 42px;
+  }
+}
+
+.footer-reg-form__icon {
+  display: none;
+  @media screen and (min-width: 1110px) {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    transform: translateY(-50%);
+    fill: var(--green-color);
+
+    display: inline-block;
+    width: 16px;
+    height: 24px;
+  }
+}
+
+.footer-reg-field__btn {
+  padding: 8px 15px 7px;
+  margin-top: 21px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--light-background-color);
+  background-color: var(--green-color);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  transition: background-color var(--time-of-animation) var(--timing-function),
+    color var(--time-of-animation) var(--timing-function);
+  &:focus,
+  &:hover {
+    background-color: var(--background-color-for-socials);
+    color: var(--green-color);
+    outline: 2px solid var(--green-color);
+  }
+  @media screen and (min-width: 1110px) {
+    margin-top: 25px;
+  }
+}
+// ------------------------etc-----------------------------
+
+.footer-privacy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
   text-align: center;
+  &__text {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+  @media screen and (min-width: 1110px) {
+    margin-bottom: 40px;
+  }
+}
+
+.footer__box {
+  position: relative;
+  margin-left: 5px;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.footer__btn {
+  position: relative;
+  z-index: 1;
+  width: 160px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  transition: transform var(--time-of-animation) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--green-color);
+    transform: scale(1.03);
+  }
+}
+
+.footer__box::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 170px;
+  left: 62px;
+  top: -64px;
+  background: linear-gradient(#ff9900, #4d8dff);
+  animation: animate 5s linear infinite;
+}
+
+.footer__box::after {
+  content: '';
+  position: absolute;
+  background: var(--light-background-color);
+  inset: 2px;
+  border-radius: 5px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
