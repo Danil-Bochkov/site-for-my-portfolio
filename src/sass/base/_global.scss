@@ -10,7 +10,6 @@ body {
   &.lock {
     overflow: hidden;
   }
-
 }
 
 .logo {
@@ -46,8 +45,8 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (min-width: 411px) {
+    width: 411px;
   }
 
   @media screen and (min-width: 768px) {
