@@ -372,6 +372,183 @@ body.modal-open, body.lock {
   }
 }
 
+.pricing {
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+}
+
+.pricing__pre-label {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1110px) {
+  .pricing__pre-label {
+    margin-bottom: 32px;
+  }
+}
+
+.pricing__label {
+  margin-bottom: 8px;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.pricing__second-label {
+  margin-bottom: 74px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1110px) {
+  .pricing__second-label {
+    margin-bottom: 40px;
+  }
+}
+
+.list-field {
+  z-index: 20;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  display: flex;
+  position: relative;
+}
+
+@media screen and (min-width: 1110px) {
+  .list-field {
+    flex-direction: row;
+    gap: 72px;
+  }
+}
+
+.list-field__item {
+  width: 322px;
+  cursor: pointer;
+  background-color: var(--white-color);
+  transition: background-color var(--time-of-animation) var(--timing-function), color var(--time-of-animation) var(--timing-function);
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 32px;
+  display: flex;
+  box-shadow: 0 2px 8px #00000040;
+}
+
+.list-field__item:hover, .list-field__item:focus {
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+
+.list-field__item:hover .price-field__num, .list-field__item:hover .price-info__currency, .list-field__item:hover .price-info__text, .list-field__item:focus .price-field__num, .list-field__item:focus .price-info__currency, .list-field__item:focus .price-info__text {
+  color: var(--white-color);
+}
+
+.list-field__item:hover .btn-order, .list-field__item:focus .btn-order {
+  background-color: var(--white-color);
+  color: var(--green-color);
+}
+
+.cards-list__title {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.66;
+}
+
+.cards-list__description {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 2.5;
+}
+
+.price-field {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.price-field__num {
+  letter-spacing: .2px;
+  color: var(--green-color);
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 1.31;
+}
+
+.price-info {
+  text-align: start;
+  margin-left: 8px;
+}
+
+.price-info__currency {
+  letter-spacing: .1px;
+  color: var(--green-color);
+  margin-bottom: 4px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.price-info__text {
+  letter-spacing: .1px;
+  color: #afafaf;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.cards-list-inclusion {
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 38px;
+  display: flex;
+}
+
+.cards-list-inclusion__item {
+  letter-spacing: .2px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.375;
+}
+
+.btn-order {
+  color: var(--white-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 18px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+}
+
+.decoration {
+  display: none;
+}
+
+@media screen and (min-width: 1110px) {
+  .decoration {
+    width: 1109px;
+    height: 1px;
+    z-index: 1;
+    background-color: #bcd0e57f;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .hero {
   padding-top: 30px;
 }
@@ -493,6 +670,168 @@ body.modal-open, body.lock {
 
 .action-field__link svg {
   margin-right: 9px;
+}
+
+.pricing {
+  text-align: center;
+  position: relative;
+}
+
+.pricing__label {
+  margin-bottom: 8px;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.pricing__second-label {
+  margin-bottom: 74px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1110px) {
+  .pricing__second-label {
+    margin-bottom: 40px;
+  }
+}
+
+.list-field {
+  z-index: 20;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  display: flex;
+  position: relative;
+}
+
+@media screen and (min-width: 1110px) {
+  .list-field {
+    flex-direction: row;
+    gap: 72px;
+  }
+}
+
+.list-field__item {
+  width: 322px;
+  cursor: pointer;
+  background-color: var(--white-color);
+  transition: background-color var(--time-of-animation) var(--timing-function), color var(--time-of-animation) var(--timing-function);
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 32px;
+  display: flex;
+  box-shadow: 0 2px 8px #00000040;
+}
+
+.list-field__item:hover, .list-field__item:focus {
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+
+.list-field__item:hover .price-field__num, .list-field__item:hover .price-info__currency, .list-field__item:hover .price-info__text, .list-field__item:focus .price-field__num, .list-field__item:focus .price-info__currency, .list-field__item:focus .price-info__text {
+  color: var(--white-color);
+}
+
+.list-field__item:hover .btn-order, .list-field__item:focus .btn-order {
+  background-color: var(--white-color);
+  color: var(--green-color);
+}
+
+.cards-list__title {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.66;
+}
+
+.cards-list__description {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 2.5;
+}
+
+.price-field {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.price-field__num {
+  letter-spacing: .2px;
+  color: var(--green-color);
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 1.31;
+}
+
+.price-info {
+  text-align: start;
+  margin-left: 8px;
+}
+
+.price-info__currency {
+  letter-spacing: .1px;
+  color: var(--green-color);
+  margin-bottom: 4px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.price-info__text {
+  letter-spacing: .1px;
+  color: #afafaf;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.cards-list-inclusion {
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 38px;
+  display: flex;
+}
+
+.cards-list-inclusion__item {
+  letter-spacing: .2px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.375;
+}
+
+.btn-order {
+  color: var(--white-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 18px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+}
+
+.decoration {
+  display: none;
+}
+
+@media screen and (min-width: 1110px) {
+  .decoration {
+    width: 1109px;
+    height: 1px;
+    z-index: 1;
+    background-color: #bcd0e57f;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .advertisement-field {

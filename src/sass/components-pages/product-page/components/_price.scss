@@ -1,0 +1,159 @@
+.pricing {
+  text-align: center;
+  position: relative;
+}
+
+.pricing__label {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.pricing__second-label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 74px;
+  @media screen and (min-width: 1110px) {
+    margin-bottom: 40px;
+  }
+}
+
+.list-field {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  @media screen and (min-width: 1110px) {
+    flex-direction: row;
+    gap: 72px;
+  }
+}
+
+.list-field__item {
+  padding: 24px 32px;
+  width: 322px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  cursor: pointer;
+
+  background-color: var(--white-color);
+  transition: background-color var(--time-of-animation) var(--timing-function),
+    color var(--time-of-animation) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--green-color);
+    color: var(--white-color);
+    & .price-field__num,
+    .price-info__currency,
+    .price-info__text {
+      color: var(--white-color);
+    }
+    & .btn-order {
+      background-color: var(--white-color);
+      color: var(--green-color);
+    }
+  }
+}
+
+.cards-list__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.66;
+  margin-bottom: 8px;
+}
+
+.cards-list__description {
+  font-size: 16px;
+  line-height: 2.5;
+  margin-bottom: 16px;
+}
+
+.price-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.price-field__num {
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 1.31;
+
+  letter-spacing: 0.2px;
+  color: var(--green-color);
+}
+
+.price-info {
+  margin-left: 8px;
+  text-align: start;
+}
+
+.price-info__currency {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+
+  letter-spacing: 0.1px;
+  color: var(--green-color);
+  margin-bottom: 4px;
+}
+
+.price-info__text {
+  font-size: 16px;
+  line-height: 1.18;
+
+  letter-spacing: 0.1px;
+  color: #afafaf;
+}
+
+.cards-list-inclusion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 38px;
+}
+
+.cards-list-inclusion__item {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.375;
+
+  letter-spacing: 0.2px;
+}
+
+.btn-order {
+  padding: 11px 18px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--white-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.decoration {
+  display: none;
+  @media screen and (min-width: 1110px) {
+    display: block;
+    width: 1109px;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(188, 208, 229, 0.496913);
+  }
+}
