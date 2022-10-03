@@ -175,12 +175,13 @@
   cursor: pointer;
 
   transition: background-color var(--time-of-animation) var(--timing-function),
-    color var(--time-of-animation) var(--timing-function);
+    color var(--time-of-animation) var(--timing-function),
+    outline var(--time-of-animation) var(--timing-function);
   &:focus,
   &:hover {
     background-color: var(--background-color-for-socials);
     color: var(--green-color);
-    outline: 2px solid var(--green-color);
+    outline: 1px solid var(--green-color);
   }
   @media screen and (min-width: 1110px) {
     margin-top: 25px;

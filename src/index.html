@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <title>Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./images/favicon.ico" />
-  <title>Product</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./sass/main.scss" />
-</head>
+  <body>
+    <include src="./partials/header/header.html"></include>
 
-<body>
-  <include src="./partials/header/header.html"></include>
-  <!-- 
+    <main>
+      <include src="./partials/product-page/hero.html"></include>
+      <include src="./partials/product-page/advantage.html"></include>
+      <include src="./partials/product-page/about.html"></include>
+      <include src="./partials/product-page/our-experts.html"></include>
+      <include src="./partials/product-page/news.html"></include>
+      <include src="./partials/product-page/price.html"></include>
+      <include src="./partials/product-page/reviews.html"></include>
+      <include src="./partials/product-page/adv.html"></include>
+    </main>
 
-    <include src="./partials/customer-page/clients.html"></include>
-    <include src="./partials/customer-page/advantage.html"></include>
-    <include src="./partials/customer-page/how-work.html"></include>
-    <include src="./partials/customer-page/community.html"></include>
-    <include src="./partials/customer-page/adv.html"></include>
+    <include src="./partials/footer/footer.html"></include>
+    <script type="module" src="./js/indexScripts/index.js"></script>
 
-    
-
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>  -->
-
-  <main></main>
-    
-  <include src="./partials/footer/footer.html"></include>
-  <script type="module" src="./js/indexScripts/index.js"></script>
-</body>
-
+  </body>
 </html>
