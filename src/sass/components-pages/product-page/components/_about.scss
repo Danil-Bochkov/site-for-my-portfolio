@@ -1,0 +1,108 @@
+.about__content {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    p:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    .about__content-text {
+        max-width: 485px;
+        max-height: 420px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .about__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 125px;
+    }
+
+    .about__content-img {
+        max-width: 540px;
+        max-height: 500px;
+    }
+    .item-1{
+        @media screen and (max-width: 1109px) {
+            flex-direction: column;
+            .about__content-text{
+                order: 1;
+            }
+          }
+    }
+    .item-2 {
+        .about__content-text {
+            order: 1;
+        }
+
+        .about__content-text-list {
+            list-style: none;
+            padding-left: 65px;
+            
+
+            .about__content-list-item:not(:last-child) {
+                margin-bottom: 25px;
+            }
+            .about__content-list-item{
+                position: relative;
+            }
+            :nth-child(1):before{
+                content: '';
+                background-image: url(../images/supaSvg/yellow_check_mark.svg);
+                width: 35px;
+                height: 35px;
+                position: absolute;
+                top: 6px;
+                left: -15%;
+                
+            }
+            :nth-child(2):before{
+                content: '';
+                background-image: url(../images/supaSvg/red_check_mark.svg);
+                width: 35px;
+                height: 35px;
+                position: absolute;
+                top: 6px;
+                left: -15%;
+            }
+            :nth-child(3):before{
+                content: '';
+                background-image: url(../images/supaSvg/blue_check_mark.svg);
+                width: 35px;
+                height: 35px;
+                position: absolute;
+                top: 6px;
+                left: -15%;
+            }
+        }
+        @media screen and (max-width: 1109px) {
+            flex-direction: column;
+            .about__content-text{
+                order: 1;
+            }
+          }
+    }
+    .item-3{
+        @media screen and (max-width: 1109px) {
+            flex-direction: column;
+            .about__content-text{
+                order: 1;
+            }
+          }
+    }
+}
