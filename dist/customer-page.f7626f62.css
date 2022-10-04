@@ -101,23 +101,24 @@ body.modal-open, body.lock {
 
 .container {
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 @media screen and (min-width: 411px) {
   .container {
-    width: 411px;
+    max-width: 411px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1110px) {
   .container {
-    width: 1110px;
+    max-width: 1110px;
   }
 }
 
@@ -513,7 +514,6 @@ body.modal-open, body.lock {
 
 .cards-list-inclusion__item {
   letter-spacing: .2px;
-  font-family: Inter;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.375;
@@ -522,8 +522,12 @@ body.modal-open, body.lock {
 .btn-order {
   color: var(--white-color);
   cursor: pointer;
+  max-width: 139px;
+  background-color: var(--green-color);
+  transition: background-color var(--time-of-animation) var(--timing-function);
   border: none;
   border-radius: 8px;
+  margin: 0 auto;
   padding: 11px 18px;
   font-family: Montserrat;
   font-size: 18px;
@@ -537,7 +541,7 @@ body.modal-open, body.lock {
 
 @media screen and (min-width: 1110px) {
   .decoration {
-    width: 1109px;
+    max-width: 1109px;
     height: 1px;
     z-index: 1;
     background-color: #bcd0e57f;
@@ -573,15 +577,15 @@ body.modal-open, body.lock {
 }
 
 .hero-container__pic {
-  width: 338px;
-  height: 311px;
+  max-width: 338px;
+  max-height: 311px;
   margin: 0 auto 11px;
 }
 
 @media screen and (min-width: 1110px) {
   .hero-container__pic {
-    width: 610px;
-    height: 555px;
+    max-width: 610px;
+    max-height: 555px;
     margin-bottom: 0;
   }
 }
@@ -714,7 +718,7 @@ body.modal-open, body.lock {
 }
 
 .list-field__item {
-  width: 322px;
+  max-width: 322px;
   cursor: pointer;
   background-color: var(--white-color);
   transition: background-color var(--time-of-animation) var(--timing-function), color var(--time-of-animation) var(--timing-function);
@@ -798,7 +802,6 @@ body.modal-open, body.lock {
 
 .cards-list-inclusion__item {
   letter-spacing: .2px;
-  font-family: Inter;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.375;
@@ -807,8 +810,12 @@ body.modal-open, body.lock {
 .btn-order {
   color: var(--white-color);
   cursor: pointer;
+  max-width: 139px;
+  background-color: var(--green-color);
+  transition: background-color var(--time-of-animation) var(--timing-function);
   border: none;
   border-radius: 8px;
+  margin: 0 auto;
   padding: 11px 18px;
   font-family: Montserrat;
   font-size: 18px;
@@ -822,7 +829,7 @@ body.modal-open, body.lock {
 
 @media screen and (min-width: 1110px) {
   .decoration {
-    width: 1109px;
+    max-width: 1109px;
     height: 1px;
     z-index: 1;
     background-color: #bcd0e57f;
@@ -902,8 +909,7 @@ body.modal-open, body.lock {
 }
 
 .advertisement-pic-field__img {
-  width: 351px;
-  height: 331px;
+  max-width: 351px;
   filter: drop-shadow(0 4px 31px #00000026);
   border-radius: 5px;
   margin: 0 auto;
@@ -912,6 +918,8 @@ body.modal-open, body.lock {
 @media screen and (min-width: 1110px) {
   .advertisement-pic-field__img {
     filter: drop-shadow(0 0 32px #00000026);
+    margin-top: 4px;
+    margin-bottom: 10px;
     margin-right: 46px;
   }
 }
@@ -1147,8 +1155,8 @@ body.modal-open, body.lock {
 
 .footer__btn {
   z-index: 1;
-  width: 160px;
-  height: 40px;
+  max-width: 160px;
+  max-height: 40px;
   cursor: pointer;
   transition: transform var(--time-of-animation) var(--timing-function);
   background: none;
@@ -1163,8 +1171,8 @@ body.modal-open, body.lock {
 
 .footer__box:before {
   content: "";
-  width: 30px;
-  height: 170px;
+  max-width: 30px;
+  max-height: 170px;
   background: linear-gradient(#f90, #4d8dff);
   animation: animate 5s linear infinite;
   position: absolute;

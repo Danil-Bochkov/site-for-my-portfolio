@@ -215,8 +215,8 @@
 .footer__btn {
   position: relative;
   z-index: 1;
-  width: 160px;
-  height: 40px;
+  max-width: 160px;
+  max-height: 40px;
   background: none;
   border: none;
   cursor: pointer;
@@ -232,8 +232,8 @@
 .footer__box::before {
   content: '';
   position: absolute;
-  width: 30px;
-  height: 170px;
+  max-width: 30px;
+  max-height: 170px;
   left: 62px;
   top: -64px;
   background: linear-gradient(#ff9900, #4d8dff);

@@ -35,7 +35,7 @@
 
 .list-field__item {
   padding: 24px 32px;
-  width: 322px;
+  max-width: 322px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -123,7 +123,6 @@
 }
 
 .cards-list-inclusion__item {
-  font-family: 'Inter';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.375;
@@ -141,13 +140,18 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  max-width: 139px;
+  margin: 0 auto;
+  background-color: var(--green-color);
+
+  transition: background-color var(--time-of-animation) var(--timing-function);
 }
 
 .decoration {
   display: none;
   @media screen and (min-width: 1110px) {
     display: block;
-    width: 1109px;
+    max-width: 1109px;
     height: 1px;
     position: absolute;
     z-index: 1;

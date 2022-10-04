@@ -43,17 +43,18 @@ body {
 
 .container {
   margin: 0 auto;
+  padding: 0 15px;
 
   @media screen and (min-width: 411px) {
-    width: 411px;
+    max-width: 411px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1110px) {
-    width: 1110px;
+    max-width: 1110px;
   }
 }
 
